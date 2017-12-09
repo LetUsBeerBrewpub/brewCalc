@@ -11,50 +11,125 @@
     <link rel="stylesheet" href="style/main.css" />
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1>brewCalc</h1>
         <p class="lead">精酿啤酒酿造计算器(Craft Beer Brewing Calculator)</p>
 
         <h3>单位换算</h3>
-        <p>长度/重量/体积
+            <p>长度/重量/体积/温度/压力
         </p>
 
         <div class="row">
-            <div class="col-4">.col-4</div>
-            <div class="col-4">.col-4</div>
-            <div class="col-4">.col-4</div>
+            <div class="col-4">
+                <h6>长度</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-length" id="unit_length_metre"  placeholder="请输入数值" aria-label="Username" aria-describedby="unit_length_metre">
+                    <span class="input-group-addon" id="unit_length_metre">米(metre)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-length" id="unit_length_inch" placeholder="请输入数值" aria-label="Username" aria-describedby="unit_length_inch">
+                    <span class="input-group-addon" id="unit_length_inch">英寸(inch)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-length" id="unit_length_foot" placeholder="请输入数值" aria-label="Username" aria-describedby="unit_length_foot">
+                    <span class="input-group-addon" id="unit_length_foot">英尺(foot)</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <h6>重量</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-weight" id="unit_weight_kg" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">千克(kg)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-weight" id="unit_weight_pound" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">磅(pound)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-weight" id="unit_weight_ounce" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">盎司(ounce)</span>
+                </div>
+            </div>
+            <div class="col-4"><h6>压力</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-pressure" id="unit_pressure_mpa" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">兆帕(MPa)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-pressure" id="unit_pressure_bar" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">巴(bar)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-pressure" id="unit_pressure_psi" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">磅/平方英寸(psi)</span>
+                </div>
+            </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-4">.col-sm-4</div>
-            <div class="col-sm-4">.col-sm-4</div>
-            <div class="col-sm-4">.col-sm-4</div>
+            <div class="col-4">
+                <h6>体积</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-volume" id="unit_volume_lite" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">升(litre)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-volume" id="unit_volume_ukgallon" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">英制加仑(UK gallon)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-volume" id="unit_volume_ukpint" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">英制品脱(UK pint)</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <h6>体积</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-volume" id="unit_volume_usgallon" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">美制加仑(US gallon)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-volume" id="unit_volume_uspint" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">美制品脱(US pint)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-volume" id="unit_volume_usquart" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">美制夸脱(US quart)</span>
+                </div>
+            </div>
+            <div class="col-4">
+                <h6>温度</h6>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-temperature" id="unit_temperature_c" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">摄氏度(°C)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-temperature" id="unit_temperature_f" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">华氏度(°F)</span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control unit-conversion-temperature" id="unit_temperature_k" placeholder="请输入数值" aria-label="Username" aria-describedby="basic-addon1">
+                    <span class="input-group-addon" id="basic-addon1">开氏度(K)</span>
+                </div>
+            </div>
         </div>
+    </main>
 
-        <div class="row">
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4">.col-md-4</div>
-            <div class="col-md-4">.col-md-4</div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4">.col-lg-4</div>
-            <div class="col-lg-4">.col-lg-4</div>
-            <div class="col-lg-4">.col-lg-4</div>
-        </div>
-
-        <div class="row">
-            <div class="col-xl-4">.col-xl-4</div>
-            <div class="col-xl-4">.col-xl-4</div>
-            <div class="col-xl-4">.col-xl-4</div>
-        </div>
-    </div>
-
-    <footer class="blog-footer">
+    <footer class="footer">
         <p>A tools powered by <a href="http://moonbeer.net">Moonbeer.net</a>.</p>
-        <p>
-            <a href="mailto:hi@moonbeer.net">hi@moonbeer.net</a>
-        </p>
+        <p><a href="mailto:hi@moonbeer.net">hi@moonbeer.net</a></p>
     </footer>
 
     <!-- Optional JavaScript -->
@@ -62,5 +137,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="lib/calculator.js"></script>
 </body>
 </html>

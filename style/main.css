@@ -17,8 +17,8 @@ margin-top: 2rem;
 [class*="col-"] {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(86,61,124,.15);
-    border: 1px solid rgba(86,61,124,.2);
+    /* background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2); */
 }
 
 hr {
@@ -26,17 +26,22 @@ hr {
     margin-bottom: 2rem;
 }
 
-  /*
+.input-group-addon {
+    width: 180px;
+}
+
+
+/*
 * Footer
 */
 
-.blog-footer {
-padding: 2.5rem 0;
-color: #999;
-text-align: center;
-background-color: #f9f9f9;
-border-top: .05rem solid #e5e5e5;
+.footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
 }
-.blog-footer p:last-child {
-margin-bottom: 0;
+.footer p:last-child {
+    margin-bottom: 10;
 }
