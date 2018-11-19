@@ -126,8 +126,16 @@
             </div>
         </div>
 
-        <h3>酒精度</h3>
-            <p>酒精度/糖度/比重/发酵程度</p>
+        <div class="row">
+            <div class="col-6">
+                <h3>酒精度</h3>
+                    <p>酒精度/糖度/比重/发酵程度</p>
+            </div>
+            <div class="col-6">
+                <h3>二发加糖量计算</h3>
+                    <p>酒精度/糖度/比重/发酵程度</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-4">
                 <h6>比重</h6>
@@ -152,16 +160,25 @@
                     <span class="input-group-addon" id="unit_length_foot">°P</span>
                 </div>
             </div>
-
-            <div class="col-4">
+            <div class="col-2">
                 <p></p>
                 <p>酒精度ABV：<span id="abv"></span></p>
                 <p>酒精度ABW：<span id="abw"></span></p>
                 <p>外观发酵度：<span id="apparent_attenuation"></span></p>
                 <p>真实发酵度：<span id="real_attenuation"></span></p>
             </div>
-
             <div class="col-4">
+                <div class="input-group">
+                    <input type="text" class="form-control secondary_fermentation" id="secondary_fermentation_co2"  placeholder="目标二氧化碳体积数" aria-label="Username" aria-describedby="secondary_fermentation_co2">
+                    <span class="input-group-addon" id="unit_length_metre"></span>
+                </div>
+                <br>
+                <div class="input-group">
+                    <input type="text" class="form-control secondary_fermentation" id="secondary_fermentation_volume" placeholder="啤酒体积" aria-label="Username" aria-describedby="secondary_fermentation_volume">
+                    <span class="input-group-addon" id="unit_length_inch">L</span>
+                </div>
+            </div>
+            <div class="col-2">
 
             </div>
         </div>
